@@ -1,2 +1,88 @@
-# dotnet-cli-cheat-sheet
-dotnet cli cheat sheet
+  # **dotnet cli cheat sheet**   :exclamation: 🚀
+
+## To display information about installed SDKs and Runtimes.
+```
+$ dotnet --info
+```
+
+## To create an empty solution. If you don’t provide the name of the solution it will use directory’s name instead and create a solution file.
+
+```
+$ dotnet new sln
+```
+
+## Create a new WebApi template project and output in to api folder, -o parameter is used to specify the output directory name.
+
+```
+$ dotnet new webapi -o api
+
+```
+
+## Add the project to the solution. If you just specify the name of the folder it will go and find all the projects inside that folder and add them to the solution.
+
+```
+$ donet sln add .\api\
+
+```
+
+##  It will list all the projects inside the solution. You must be in the root folder where .sln file exists.
+
+```
+$ dotnet sln list
+
+```
+
+## To open Visual Studio Code in the current directory.
+
+```
+$ code .
+```
+
+## Go to your Api folder and run the api project
+
+```
+$ cd api
+$ dotnet run
+```
+
+## It will keep an eye on the files changed and automatically recompile the app.
+
+```
+$ dotnet watch run
+```
+
+
+## It will keep an eye on the files changed and automatically recompile the app.
+
+```
+$ dotnet restore
+```
+
+## Will generate a cert for you or if it is already present it will confirm it’s presence but that does not mean that your OS trusts the cert.
+
+```
+$ dotnet dev-certs https
+```
+
+
+## On windows it will show a warning message and if you select Yes it will entrust the self signed cert.
+
+```
+$ dotnet dev-certs https -t
+```
+
+## Delete the local cert for development – you will be asked for confirmation.
+
+```
+$ dotnet dev-certs https --clean
+```
+
+
+## Create and trust new cert.
+
+```
+$ dotnet dev-certs https -t
+
+```
+
+
