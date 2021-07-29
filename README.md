@@ -84,5 +84,58 @@ $ dotnet dev-certs https --clean
 $ dotnet dev-certs https -t
 
 ```
+#  🚦  Generate & Run Migrations
+
+```
+$ dotnet --info
+$ dotnet tool install --global dotnet-ef --version 3.1.9
+
+$ dotnet ef -h
+
+$ dotnet ef migrations add InitialCreate -o Data/Migrations
+
+$ dotnet ef database update
+
+$ dotnet ef migrations remove -p Infrastructure -s api
+
+
+$ dotnet ef migrations add InitialiCreate -p Infrastructure -s api -o Data/Migrations
+
+```
+
+#  🚦  Test, Build and Release
+
+```
+$ dotnet build --configuration Debug
+
+$ dotnet publish --no-build --configuration Debug --output /folder/of/your/choice
+
+
+$ dotnet test --configuration Release --no-build
+
+
+$ dotnet test Tailspin.SpaceGame.Web.Tests --configuration Release --no-build --logger trx
+
+```
+
+#  🚦  use Database first
+
+## use SQL Server.
+
+```
+$ dotnet ef dbcontext scaffold "server=10.211.55.14\\MyInstance,1433;Database=BioMedEquipmentDB;User ID=sa;Password=20100;" Microsoft.EntityFrameworkCore.SqlServer -o Models
+
+```
+
+## use Orcale Database 12.
+
+```
+$ dotnet ef dbcontext Scaffold "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)(HOST=192.168.8.146)(PORT=1521))(CONNECT_DATA=(SERVER=DEDICATED)(SERVICE_NAME=ExpSysv1)));User ID=ExpAppUserss;Password=Expssaaew;Persist Security Info=True" Oracle.EntityFrameworkCore  -o Models -f
+```
+
+
+
+
+
 
 
