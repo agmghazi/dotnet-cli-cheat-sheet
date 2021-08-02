@@ -122,6 +122,8 @@ $ dotnet test Tailspin.SpaceGame.Web.Tests --configuration Release --no-build --
 #  🚦  publish application
 
 ```
+First install dotnet-hosting-5.0.8-win.exe
+
 $ dotnet publish
 
 $ dotnet publish --no-build --configuration Debug --output /folder/of/your/choice
