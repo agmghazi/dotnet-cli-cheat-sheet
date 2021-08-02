@@ -118,6 +118,16 @@ $ dotnet test Tailspin.SpaceGame.Web.Tests --configuration Release --no-build --
 
 ```
 
+
+#  🚦  publish application
+
+```
+$ dotnet publish
+
+$ dotnet publish --no-build --configuration Debug --output /folder/of/your/choice
+
+```
+
 #  🚦  use Database first
 
 ## use SQL Server.
