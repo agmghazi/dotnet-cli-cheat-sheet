@@ -128,6 +128,13 @@ $ dotnet publish --no-build --configuration Debug --output /folder/of/your/choic
 
 ```
 
+#  🚦  publish Angular Application in IIS
+
+```
+$ ng build --prod --base-href /expAppTest/
+
+```
+
 #  🚦  use Database first
 
 ## use SQL Server.
