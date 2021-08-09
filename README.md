@@ -154,7 +154,11 @@ $ dotnet ef dbcontext Scaffold "Data Source=(DESCRIPTION=(ADDRESS=(PROTOCOL=TCP)
 
 
 
+## install angular 11.
 
+```
+$ npm i -g  @angular/cli@11.2.13
 
+```
 
 
