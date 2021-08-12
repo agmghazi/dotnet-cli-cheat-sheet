@@ -126,6 +126,8 @@ First install dotnet-hosting-5.0.8-win.exe
 
 $ dotnet publish
 
+$ dotnet publish healthAPI.sln.sln
+
 $ dotnet publish --no-build --configuration Debug --output /folder/of/your/choice
 
 ```
@@ -134,6 +136,8 @@ $ dotnet publish --no-build --configuration Debug --output /folder/of/your/choic
 
 ```
 $ ng build --prod --base-href /expAppTest/
+
+$ ng build --prod --base-href /healthApp/ --aot=false --build-optimizer=false
 
 ```
 
