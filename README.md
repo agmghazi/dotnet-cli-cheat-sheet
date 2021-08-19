@@ -165,4 +165,10 @@ $ npm i -g  @angular/cli@11.2.13
 
 ```
 
+## run angular 11 in https.
+
+```
+$ ng s -o ---ssl true
+
+```
 
