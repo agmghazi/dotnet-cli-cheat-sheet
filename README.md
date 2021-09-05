@@ -27,7 +27,7 @@ $ dotnet new classlib -o eExpIdentity
 ## Add the project to the solution. If you just specify the name of the folder it will go and find all the projects inside that folder and add them to the solution.
 
 ```
-$ donet sln add .\api\
+$  dotnet sln add .\eExpIdentity\
 
 ```
 
