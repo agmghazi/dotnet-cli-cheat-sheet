@@ -114,6 +114,10 @@ $ dotnet ef migrations remove -p Infrastructure -s api
 
 $ dotnet ef migrations add InitialiCreate -p Infrastructure -s api -o Data/Migrations
 
+
+
+$ Add-Migration InitialMigration -Context IdentityContext -o Migrations
+by visual studio
 ```
 
 #  🚦  Test, Build and Release
