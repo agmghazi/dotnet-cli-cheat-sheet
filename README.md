@@ -17,6 +17,12 @@ $ dotnet new sln
 $ dotnet new webapi -o api
 
 ```
+## Create a new Class library template project and output in to api folder, -o parameter is used to specify the output directory name.
+
+```
+$ dotnet new classlib -o eExpIdentity
+
+```
 
 ## Add the project to the solution. If you just specify the name of the folder it will go and find all the projects inside that folder and add them to the solution.
 
