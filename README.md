@@ -17,6 +17,13 @@ $ dotnet new sln
 $ dotnet new webapi -o api
 
 ```
+## Create add reference.
+
+```
+$ dotnet add reference ..\eExpIdentity\
+
+```
+
 ## Create a new Class library template project and output in to api folder, -o parameter is used to specify the output directory name.
 
 ```
