@@ -118,7 +118,8 @@ $ dotnet ef migrations add InitialiCreate -p Infrastructure -s api -o Data/Migra
 
 $ Add-Migration InitialMigration -Context IdentityContext -o Migrations
 
-$Update-Database -Context IdentityContext
+$  Update-Database -Context IdentityContext
+$  Remove-Migration -Context IdentityContext
 by visual studio
 ```
 
